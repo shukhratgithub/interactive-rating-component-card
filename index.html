@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive landing page">
+  <meta name="author" content="Shukhrat Turdiev">
+  <meta name="keywords" content="Interactive Rating Component Card">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive Rating Component</title>
+
+</head>
+
+<body>
+
+  <main class="rating-component">
+    <div class="rating-component_step rating-component_step-active">
+      <div class="rating-component_inner">
+
+        <div class="rating-component_star-box">
+          <img class="rating-component_star" src="./images/icon-star.svg" alt="Star" width="17" height="16" aria-hidden="true">
+        </div>
+
+        <h1 class="rating-component_heading">
+          How did we do?
+        </h1>
+
+        <p class="rating-component_description">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+
+        <form class="rating-component_form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="star-rating">
+            <label class="star-rating_label">
+              <input class="star-rating_radio visually-hidden" type="radio" name="rating" value="1">
+              <span class="star-rating_control">1</span>
+            </label>
+            <label class="star-rating_label">
+              <input class="star-rating_radio visually-hidden" type="radio" name="rating" value="2">
+              <span class="star-rating_control">2</span>
+            </label>
+            <label class="star-rating_label">
+              <input class="star-rating_radio visually-hidden" type="radio" name="rating" value="3">
+              <span class="star-rating_control">3</span>
+            </label>
+            <label class="star-rating_label">
+              <input class="star-rating_radio visually-hidden" type="radio" name="rating" value="4">
+              <span class="star-rating_control">4</span>
+            </label>
+            <label class="star-rating_label">
+              <input class="star-rating_radio visually-hidden" type="radio" name="rating" value="5" required>
+              <span class="star-rating_control">5</span>
+            </label>
+          </div>
+          <button type="submit" class="rating-component_form-submit button button-primary button-block">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="rating-component_step">
+      <div class="rating-component_inner rating-component_center">
+
+        <img src="./images/illustration-thank-you.svg" class="rating-component_thank-you-img" alt="Thank you Picture" width="162" height="102" aria-hidden="true">
+
+        <div class="result-component_result-message">
+          You selected <span class="rating-component_result-label">4</span> out of 5
+        </div>
+
+        <div class="rating-component_heading">
+          Thank you!
+        </div>
+
+        <div class="rating-component_description">
+          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
